@@ -1,27 +1,41 @@
-# TaskTrackerFrontend
+# task-tracker-frontend
+The Task Tracker frontend is built using **Angular**, and it provides a user interface to manage tasks. This frontend interacts with a backend API (built with Nest.js) to perform CRUD operations on tasks such as creating, updating, deleting, and marking tasks as completed.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
+# Task Tracker Frontend
 
-## Development server
+This is the frontend interface for the Task Tracker application, built using **Angular**.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Prerequisites
 
-## Code scaffolding
+- **Node.js** (v16.x or higher)
+- **npm** (v7.x or higher)
+- **Angular CLI**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You can install the Angular CLI globally by running:
 
-## Build
+```bash
+npm install -g @angular/cli
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+1. **Clone the repository**:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+   ```bash
+   git clone https://github.com/CarlaCostea/task-tracker-frontend.git
+   cd task-tracker-frontend
+   ```
 
-## Running end-to-end tests
+2. **Install dependencies**:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```bash
+   npm install
+   ```
 
-## Further help
+3. **Run the frontend server**:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+   ```bash
+   npm start
+   ```
+
+The frontend server will start on `http://localhost:4200`.
