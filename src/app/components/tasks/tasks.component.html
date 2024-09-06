@@ -1,0 +1,25 @@
+<div>
+  <div class="search-filter">
+    <input 
+      type="text" 
+      placeholder="Search tasks by title" 
+      (input)="onSearchChange($event)" 
+    />
+    <label>
+      <input 
+        type="checkbox" 
+        (change)="onCompletedToggle($event)" 
+      /> 
+      Show Completed Tasks
+    </label>
+  </div>
+
+  <app-task
+    *ngFor="let task of tasks"
+    [task]="task"
+    (onDeleteTask)="deleteTask(task)"
+    (onToggleStatus)="toggleStatus(task)"
+  ></app-task>
+
+  <app-add-task (onAddTask)="addTask($event)"></app-add-task>
+</div>

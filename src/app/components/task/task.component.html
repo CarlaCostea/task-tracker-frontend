@@ -1,0 +1,27 @@
+<div
+  class="task"
+  [ngClass]="{ completed: task.completed }"
+>
+  <h3>
+    {{ task.title }}
+    <span class="icons-container">
+    <fa-icon
+    (click)="onToggle(task)"
+    [ngStyle]="{ color: !task.completed ? 'green' : 'gray' }"
+    [icon]="task.completed ? faUndo : faCheck"
+  ></fa-icon>
+    <fa-icon
+      (click)="onDelete(task)"
+      [ngStyle]="{ color: 'red' }"
+      [icon]="faTrash"
+    ></fa-icon>
+</span>
+  </h3>
+  <p>{{ task.description }}</p>
+  <p class="status">
+    Status: 
+    <span [ngClass]="task.completed ? 'completed-status' : 'not-completed-status'">
+      {{ task.completed ? 'Completed' : 'Not Completed' }}
+    </span>
+  </p>  
+</div>
