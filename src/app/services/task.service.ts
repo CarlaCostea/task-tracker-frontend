@@ -14,7 +14,7 @@ const httpOptions = {
 })
 export class TaskService {
 
-  private apiUrl = 'http://localhost:3000/tasks';
+  private apiUrl = 'https://task-tracker-backend-k3xg.onrender.com/tasks';
 
   constructor(private http: HttpClient) {}
 
